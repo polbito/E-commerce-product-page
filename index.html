@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>E-commerce product page</title>
+        <link rel="icon" href="/images/favicon-32x32.png">
+        <!-- Css -->
+        <link rel="stylesheet" href="style.css">
+        <!-- GoogleFonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&family=Kumbh+Sans:wght@300;400;500;600;700&family=Roboto:wght@100;300;400;500;700;900&family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+        <!-- fontawesome -->
+        <script src="https://kit.fontawesome.com/84d79aaf52.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div class="container">  
+            <header class="header">
+                <div class="left">
+                    <div class="menu">
+                        <img id="menu_icon" src="images/icon-menu.svg" alt="menu icon">
+                    </div>
+                    <div class="logo">
+                        <img src="images/logo.svg" alt="Logo">
+                    </div>
+                    <nav class="nav">
+                        <ul>
+                            <li><a href="#">Collections</a></li>
+                            <li><a href="#">Men</a></li>
+                            <li><a href="#">Women</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="right">
+                    <div style="position: relative;">
+                        <img src="images/icon-cart.svg" class="cart-icon" alt="cart icon">
+                        <span id="n-items-added">1</span>
+                    </div>
+                    <img src="images/image-avatar.png" class="avatar-image" alt="avatar image">
+                </div>
+                <div class="cart">
+                    <div class="top">
+                        <p>Cart</p>
+                    </div>
+                    <hr class="hr">
+                    <div class="bottom">
+                        <p class="cart_empty">Your cart is empty.</p>
+                    </div>
+                </div>
+            </header>
+            <main class="main">
+                <div class="product-images">
+                    <div class="active-image">
+
+                        <img class="controllers__mobile controllers__mobile__prev" src="images/icon-previous.svg" alt="icon previous">
+
+                        <img id="active_image_product" src="images/image-product-1.jpg" alt="image product">
+
+                        <img class="controllers__mobile controllers__mobile__next" src="images/icon-next.svg" alt="icon next">
+
+                    </div>
+                    <div class="thumbnails">
+                        <img class="active-thumbnail" src="images/image-product-1-thumbnail.jpg" alt="image product thumbnail">
+                        <img src="images/image-product-2-thumbnail.jpg" alt="image product thumbnail">
+                        <img src="images/image-product-3-thumbnail.jpg" alt="image product thumbnail">
+                        <img src="images/image-product-4-thumbnail.jpg" alt="image product thumbnail">
+                    </div>
+                </div>
+                <div class="product-description">
+                    <h4>sneaker company</h4>
+                    <h1 class="product-title">Fall Limited Edition<br>Sneakers</h1>
+                    <p class="product-description-paragraph">These low-profile sneakers are your perfect casual wear <br>
+                        companion. Featuring a durable rubber outer sole, theyll <br>
+                        withstand everything the weather can offer.
+                    </p>
+                    <div class="product-price">
+                        <div>
+                            <span class="price">$125.00</span>
+                            <span class="canceled">$250.00</span>
+                        </div>
+                        <span class="promotion-percentage">50%</span>
+                    </div>
+                    <div class="buy">
+                        <div class="items-number">
+                            <img id="minus" src="images/icon-minus.svg" alt="minus icon">
+                            <span id="n-items">0</span>
+                            <img id="plus" src="images/icon-plus.svg" alt="plus icon">
+                        </div>
+                        <button id="add-to-cart">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            Add to cart
+                        </button>
+                    </div>
+                </div>
+                <div class="product-gallery">
+                    <div style="position: relative;width: 485px;">
+                        <i id="close" class="fa-solid fa-x"></i>
+                        <img id="previous" src="images/icon-previous.svg" alt="icon previous">
+
+                        <img src="" id="current_image" alt="product image">
+
+                        <img id="next" src="images/icon-next.svg" alt="icon next">
+                    </div>
+                    <div>
+                        <img src="" alt="product image">
+                        <img src="" alt="product image">
+                        <img src="" alt="product image">
+                        <img src="" alt="product image">
+                    </div>
+                </div>
+            </main>
+        </div>
+
+    <script src="script.js"></script>
+    </body>
+
+</html>
